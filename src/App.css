@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  background-color: #606c38;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  background: #283618;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 10rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dda15e;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-field:focus {
+  outline: none;
+  border-color: #bc6c25;
+}
+
+.button-form-submit {
+  background: #fefae0;
+  color: #bc6c25;
+  padding: 10px 20px;
+  border: 1px solid #bc6c25;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.success-message {
+  color: #606c38;
+  font-weight: bold;
+  background-color: #283618;
+  padding-top: 20px;
 }
