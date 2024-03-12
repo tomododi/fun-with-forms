@@ -6,7 +6,12 @@ function App() {
     <div className="form-container">
       <form>
         <div className="form-group">
-          <input className="form-field" placeholder="Imię" name="firstName" />
+          <input
+            className="form-field"
+            placeholder="Imię"
+            name="firstName"
+            required
+          />
           <input
             className="form-field"
             placeholder="Nazwisko"
